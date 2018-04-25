@@ -9,7 +9,7 @@ import AddGame from './components/addGame'
 
 // configure apollo client
 const client = new ApolloClient({
-	uri: 'http://localhost:3050/graphql'
+	uri: 'https://demo-app-server.herokuapp.com/graphql'
 });
 
 class App extends Component {
