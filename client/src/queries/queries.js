@@ -28,8 +28,28 @@ const addGameMutation = gql`
 	 }
  }
 `
+
+const getGameQuery = gql`
+	query($id: ID){
+		game(id: $id){
+			id
+			title
+			genre
+			developer {
+				id
+				name
+				location
+				games{
+					title
+					id
+				}
+			}
+		}
+	}
+`
 export {
 	getDevelopersQuery,
 	getGamesQuery,
+	getGameQuery,
 	addGameMutation
 };

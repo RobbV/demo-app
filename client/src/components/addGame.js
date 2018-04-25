@@ -35,22 +35,23 @@ class AddGame extends Component {
 			refetchQueries: [{ query: getGamesQuery}]
 		})
 	}
+
   render() {
     return (
-      <div id="games">
-			<div id="popup1" class="overlay">
-			<div class="popup">
+      <div id="addgame">
+			<div id="popup1" className="overlay">
+			<div id="popup">
 				<h2>Add a New Game</h2>
-				<a class="close" href="#">×</a>
-				<div class="content">
+				<a id="close" href="#close">×</a>
+				<div id="content">
 				<form id="addgame" onSubmit={this.submitForm.bind(this)} >
-						<label for="title">Game Title</label>
+						<label >Game Title</label>
 						<input type="text" name="title" onChange={ (event) => this.setState({title: event.target.value})} placeholder="Enter Game Title" />
 
-						<label for="genre">Enter Genre</label>
+						<label >Enter Genre</label>
 						<input type="text" name="genre" onChange={ (event) => this.setState({genre: event.target.value})} placeholder="Enter Genre" />
 
-						<label for="developer">select a game developer</label>
+						<label >select a game developer</label>
 						<select  name="developer" onChange={ (event) => this.setState({developerId: event.target.value})}>
 							<option value="null">Select a Developer...</option>
 							{this.renderDevelopers()}

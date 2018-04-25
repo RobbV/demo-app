@@ -34,8 +34,34 @@ main {
 	width: 100vw;
 	height: 98vh;
 	background-color: #1d1f21;
+	display: flex;
+}
+#games {
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	height: 100%;
+}
+#games table {
+	width: 50vw;
+}
+#games table tr:hover {
+	background-color: #4ecf69;
+	transition: 0.2s;
+}
+#gameinfo {
+	background-color: #4ecf69;
+	height: 100%;
+	width: 50vw;
+}
+#gameinfo div {
+	margin-top: 2rem;
+	margin-left: 2rem;
 }
 main li {
+	color: #fff;
+}
+main p {
 	color: #fff;
 }
 form {
@@ -133,7 +159,7 @@ form button:hover {
   opacity: 1;
 }
 
-.popup {
+#popup {
   margin: 70px auto;
   padding: 20px;
   background: #51cf70;
@@ -143,12 +169,12 @@ form button:hover {
   transition: all 5s ease-in-out;
 }
 
-.popup h2 {
+#popup h2 {
   margin-top: 0;
   color: #fff;
   font-family: Tahoma, Arial, sans-serif;
 }
-.popup .close {
+#popup #close {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -158,10 +184,10 @@ form button:hover {
   text-decoration: none;
   color: #fff;
 }
-.popup .close:hover {
+#popup #close:hover {
   color: #1d1f21;
 }
-.popup .content {
+#popup #content {
   max-height: 30%;
   overflow: auto;
 }
