@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+body {
+	margin: 0;
+	padding:  0;
+}
+header {
+	width: 100vw;
+	height: 80px;
+	background-color: #4ecf69;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+header h1 {
+	font-family: 'Gugi', sans-serif;
+	color: #fff;
+	margin: 0;
+	font-size: 40px;
+}
+header a {
+	font-family: 'Arial', 'Helvetica', sans-serif;
+	color: #fff;
+	text-decoration: none;
+	border: 5px solid #fff;
+	border-radius: 5px;
+	padding: 5px;
+}
+header a:hover {
+	color: #1d1f21;
+	border: 5px solid #1d1f21;
+	transition: 0.4s;
+}
+main {
+	width: 100vw;
+	height: 98vh;
+	background-color: #1d1f21;
+}
+main li {
+	color: #fff;
+}
+form {
+	display: flex;
+	flex-direction: column;
+}
+form label {
+	display: none;
+}
+form input, form input::placeholder {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: none;
+	border-bottom: 3px solid #fff;
+	background: none;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	color: #fff;
+	margin-bottom: 2rem;
+	outline: none
+}
+select {
+	outline: none;
+  border-radius: 0;
+  padding-left: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 2rem;
+	border: none;
+	border: 3px solid #fff;
+	background: none;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	color: #fff;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAh0lEQVQ4T93TMQrCUAzG8V9x8QziiYSuXdzFC7h4AcELOPQAdXYovZCHEATlgQV5GFTe1ozJlz/kS1IpjKqw3wQBVyy++JI0y1GTe7DCBbMAckeNIQKk/BanALBB+16LtnDELoMcsM/BESDlz2heDR3WePwKSLo5eoxz3z6NNcFD+vu3ij14Aqz/DxGbKB7CAAAAAElFTkSuQmCC');
+  background-repeat: no-repeat;
+  background-position:  right;
+}
+form button {
+	font-family: 'Arial', 'Helvetica', sans-serif;
+	color: #fff;
+	text-decoration: none;
+	border: 5px solid #fff;
+	border-radius: 5px;
+	padding: 10px;
+	font-size:  15px;
+	background: none;
+}
+form button:hover {
+	color: #1d1f21;
+	border: 5px solid #1d1f21;
+	transition: 0.4s;
+}
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid blue;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: blue;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #51cf70;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #fff;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+.popup .close:hover {
+  color: #1d1f21;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}

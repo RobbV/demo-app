@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style media="screen">
+	@import url('https://fonts.googleapis.com/css?family=Gugi');
+		body {
+			margin: 0;
+			padding:  0;
+		}
+		header {
+			width: 100vw;
+			height: 80px;
+			background-color: #4ecf69;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		header h1 {
+			font-family: 'Gugi', cursive;
+			color: #fff;
+			margin: 0;
+			font-size: 40px;
+		}
+		header a {
+			font-family: 'Arial', 'Helvetica', sans-serif;
+			color: #fff;
+			text-decoration: none;
+			border: 5px solid #fff;
+			border-radius: 5px;
+			padding: 5px;
+		}
+		header a:hover {
+			color: #1d1f21;
+			border: 5px solid #1d1f21;
+			transition: 0.4s;
+		}
+		main {
+			width: 100vw;
+			height: 98vh;
+			background-color: #1d1f21;
+		}
+	</style>
+	<body>
+		<header>
+			<h1>Robb's Demo App</h1>
+			<a role="button" href="#">Add New Game</a>
+		</header>
+		<main>
+			<form class="" action="index.html" method="post">
+				<fieldset>
+					<label for="title">Game Title</label>
+					<input type="text" name="title" placeholder="Enter Game Title">
+				</fieldset>
+				<fieldset>
+					<label for="genre">Enter Genre</label>
+					<input type="text" name="genre" placeholder="Enter Genre">
+				</fieldset>
+				<fieldset>
+					<label for="developer">select a game developer</label>
+					<select  name="developer">
+						<option value="null">Select a Developer...</option>
+						<option value=""></option>
+					</select>
+				</fieldset>
+			</form>
+		</main>
+	</body>
+</html>
